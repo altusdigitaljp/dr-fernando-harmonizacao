@@ -1,0 +1,2108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Fernando Fernandes | Harmonização Facial em João Pessoa</title>
+  <meta name="description" content="Especialista em Harmonização Facial em João Pessoa. Realce sua beleza natural com o Dr. Fernando Fernandes, Cirurgião Dentista e referência em estética facial na Paraíba." />
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5JND7NQN');</script>
+  <!-- End Google Tag Manager -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    /* =============================================
+       VARIÁVEIS E RESET
+    ============================================= */
+    :root {
+      --verde:       #2D4A2D;
+      --verde-medio: #3D6B3D;
+      --verde-claro: #4A7C4A;
+      --dourado:     #C9A84C;
+      --dourado-claro: #E2C97E;
+      --creme:       #FAF8F5;
+      --marmore:     #F0EEEB;
+      --texto:       #31363E;
+      --texto-suave: #6B7789;
+      --branco:      #FFFFFF;
+
+      --fonte-titulo: 'Montserrat', sans-serif;
+      --fonte-corpo:  'Cormorant Garamond', serif;
+      --fonte-ui:     'Montserrat', sans-serif;
+
+      --sombra-suave: 0 4px 24px rgba(45, 74, 45, 0.08);
+      --sombra-media: 0 8px 48px rgba(45, 74, 45, 0.14);
+      --sombra-forte: 0 16px 64px rgba(45, 74, 45, 0.20);
+
+      --raio-sm:  8px;
+      --raio-md:  16px;
+      --raio-lg:  24px;
+      --raio-xl:  32px;
+      --raio-pill: 100px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--fonte-ui);
+      background-color: var(--creme);
+      color: var(--texto);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    img { display: block; max-width: 100%; }
+    a   { text-decoration: none; color: inherit; }
+
+    /* =============================================
+       TEXTURA MÁRMORE (SVG inline via background)
+    ============================================= */
+    .marmore-bg {
+      background-color: var(--creme);
+      background-image:
+        radial-gradient(ellipse at 20% 30%, rgba(201,168,76,0.06) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 70%, rgba(45,74,45,0.05) 0%, transparent 50%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='600'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='600' height='600' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    }
+
+    /* =============================================
+       COMPONENTES REUTILIZÁVEIS
+    ============================================= */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section-label {
+      font-family: var(--fonte-titulo);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--dourado);
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-family: var(--fonte-titulo);
+      font-size: clamp(28px, 5vw, 44px);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--verde);
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    .section-title span {
+      color: var(--dourado);
+    }
+
+    .section-subtitle {
+      font-family: var(--fonte-corpo);
+      font-size: clamp(17px, 2.5vw, 21px);
+      font-weight: 400;
+      color: var(--texto-suave);
+      line-height: 1.7;
+      max-width: 580px;
+    }
+
+    .divider-dourado {
+      width: 60px;
+      height: 2px;
+      background: linear-gradient(90deg, var(--dourado), transparent);
+      margin: 20px 0;
+    }
+
+    /* BOTÃO CTA PRINCIPAL */
+    .btn-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: var(--verde);
+      color: var(--branco);
+      font-family: var(--fonte-titulo);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 17px 32px;
+      border: 2px solid var(--dourado);
+      border-radius: var(--raio-pill);
+      cursor: pointer;
+      transition: all 0.35s ease;
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    @media (min-width: 480px) {
+      .btn-cta { width: auto; }
+    }
+
+    .btn-cta::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: var(--dourado);
+      transform: translateX(-100%);
+      transition: transform 0.35s ease;
+      z-index: 0;
+      border-radius: var(--raio-pill);
+    }
+
+    .btn-cta:hover::before { transform: translateX(0); }
+    .btn-cta:hover { color: var(--verde); }
+    .btn-cta span, .btn-cta svg { position: relative; z-index: 1; }
+
+    .btn-cta svg {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+      transition: fill 0.35s ease;
+      flex-shrink: 0;
+    }
+
+    /* BOTÃO SECUNDÁRIO */
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: transparent;
+      color: var(--verde);
+      font-family: var(--fonte-titulo);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 15px 32px;
+      border: 2px solid var(--verde);
+      border-radius: var(--raio-pill);
+      cursor: pointer;
+      transition: all 0.35s ease;
+      width: 100%;
+    }
+
+    @media (min-width: 480px) {
+      .btn-outline { width: auto; }
+    }
+
+    .btn-outline:hover {
+      background: var(--verde);
+      color: var(--branco);
+    }
+
+    /* PLACEHOLDER DE FOTO */
+    .foto-placeholder {
+      background: linear-gradient(135deg, #E8EAE6 0%, #D4D8D0 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      color: #8A9280;
+      font-family: var(--fonte-titulo);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      border: 1.5px dashed #BBC0B5;
+    }
+
+    .foto-placeholder svg {
+      width: 32px;
+      height: 32px;
+      opacity: 0.5;
+    }
+
+    /* =============================================
+       BARRA SUPERIOR — oculta no mobile
+    ============================================= */
+    .topbar {
+      background: var(--verde);
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    .topbar p {
+      font-family: var(--fonte-titulo);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--dourado-claro);
+    }
+
+    @media (max-width: 900px) {
+      .topbar { display: none; }
+    }
+
+    /* =============================================
+       HEADER / NAV
+    ============================================= */
+    .header {
+      background: var(--creme);
+      border-bottom: 1px solid rgba(45,74,45,0.08);
+      padding: 20px 0;
+      box-shadow: 0 2px 20px rgba(45,74,45,0.06);
+    }
+
+    @media (max-width: 900px) {
+      .header { display: none; }
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .logo-img {
+      height: 48px;
+      width: auto;
+      display: block;
+    }
+
+    @media (max-width: 640px) {
+      .logo-img { height: 38px; }
+    }
+
+    .header-cta {
+      display: none;
+    }
+
+    @media (min-width: 640px) {
+      .header-cta { display: inline-flex; }
+    }
+
+    /* =============================================
+       HERO
+    ============================================= */
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr;
+      position: relative;
+      overflow: hidden;
+    }
+
+    @media (min-width: 900px) {
+      .hero { grid-template-columns: 1fr 1fr; }
+    }
+
+    .hero-conteudo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 56px 24px 56px 48px;
+      position: relative;
+      z-index: 2;
+    }
+
+    @media (max-width: 900px) {
+      .hero-conteudo {
+        padding: 48px 24px 36px;
+        text-align: center;
+        align-items: center;
+      }
+    }
+
+    /* Logo dentro do hero — só mobile */
+    .hero-logo-mobile {
+      display: none;
+      margin-bottom: 28px;
+    }
+
+    .hero-logo-mobile img {
+      height: 56px;
+      width: auto;
+    }
+
+    @media (max-width: 900px) {
+      .hero-logo-mobile { display: flex; justify-content: center; }
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(201,168,76,0.12);
+      border: 1px solid rgba(201,168,76,0.3);
+      padding: 7px 18px;
+      border-radius: var(--raio-pill);
+      margin-bottom: 24px;
+      width: fit-content;
+    }
+
+    .hero-badge span {
+      font-family: var(--fonte-titulo);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--dourado);
+    }
+
+    .hero-badge::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      background: var(--dourado);
+      border-radius: 50%;
+    }
+
+    .hero h1 {
+      font-family: var(--fonte-titulo);
+      font-size: clamp(28px, 4.2vw, 52px);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      color: var(--verde);
+      line-height: 1.08;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 em {
+      font-style: normal;
+      color: var(--dourado);
+      display: block;
+    }
+
+    .hero-subtitulo {
+      font-family: var(--fonte-corpo);
+      font-size: clamp(18px, 2.5vw, 24px);
+      font-weight: 300;
+      font-style: italic;
+      color: var(--texto-suave);
+      margin-bottom: 36px;
+      max-width: 480px;
+      line-height: 1.6;
+    }
+
+    .hero-acoes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+      margin-bottom: 40px;
+      width: 100%;
+    }
+
+    @media (max-width: 900px) {
+      .hero-acoes { justify-content: center; }
+    }
+
+    .btn-cta-hero {
+      font-size: 15px;
+      padding: 20px 44px;
+      letter-spacing: 0.14em;
+    }
+
+    @media (max-width: 900px) {
+      .btn-cta-hero {
+        width: 100%;
+        max-width: 360px;
+        font-size: 14px;
+        padding: 19px 32px;
+      }
+    }
+
+    .hero-selos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: flex-start;
+    }
+
+    @media (max-width: 900px) {
+      .hero-selos { justify-content: center; }
+    }
+
+    .selo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .selo-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--dourado);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .selo span {
+      font-family: var(--fonte-titulo);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--texto-suave);
+    }
+
+    .hero-foto-wrapper {
+      position: relative;
+      overflow: hidden;
+      min-height: 400px;
+    }
+
+    @media (max-width: 900px) {
+      .hero-foto-wrapper {
+        min-height: 340px;
+        margin: 0 20px 32px;
+        border-radius: var(--raio-xl);
+        overflow: hidden;
+      }
+    }
+
+    .hero-foto-placeholder {
+      width: 100%;
+      height: 100%;
+      min-height: inherit;
+    }
+
+    .hero-ornamento { display: none; }
+
+    /* Foto no mobile: dentro da coluna de conteúdo, entre subtítulo e botões */
+    .hero-foto-mobile {
+      display: none;
+      width: 85%;
+      max-width: 320px;
+      height: 360px;
+      border-radius: var(--raio-xl);
+      overflow: hidden;
+      margin: 16px auto 28px;
+      position: relative;
+      box-shadow: 0 12px 40px rgba(45,74,45,0.15);
+    }
+
+    /* Foto no desktop: coluna direita, oculta no mobile */
+    .hero-foto-desktop {
+      display: block;
+    }
+
+    @media (max-width: 900px) {
+      .hero-foto-mobile  { display: block; }
+      .hero-foto-desktop { display: none; }
+    }
+
+    /* Imagem do doutor no desktop */
+    .hero-foto-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+    }
+
+    /* Degradê inferior: funde a foto com o fundo creme do site */
+    .foto-fade-bottom {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 45%;
+      background: linear-gradient(to top, var(--creme) 0%, transparent 100%);
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    /* Degradê lateral esquerdo: funde com a coluna de texto (só desktop) */
+    .foto-fade-left {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 30%;
+      background: linear-gradient(to right, var(--creme) 0%, transparent 100%);
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    /* =============================================
+       STRIP DE ESPECIALIDADES
+    ============================================= */
+    .strip {
+      background: var(--verde);
+      padding: 20px 0;
+      overflow: hidden;
+    }
+
+    .strip-inner {
+      display: flex;
+      gap: 0;
+      white-space: nowrap;
+    }
+
+    .strip-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 16px;
+      padding: 0 32px;
+      flex-shrink: 0;
+    }
+
+    .strip-item span {
+      font-family: var(--fonte-titulo);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.85);
+    }
+
+    .strip-sep {
+      color: var(--dourado);
+      font-size: 18px;
+    }
+
+    /* =============================================
+       SEÇÃO: O QUE É HARMONIZAÇÃO
+    ============================================= */
+    .secao-harmonizacao {
+      padding: 100px 0;
+    }
+
+    .harmonizacao-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    @media (min-width: 900px) {
+      .harmonizacao-grid { grid-template-columns: 1fr 1fr; gap: 80px; }
+    }
+
+    .harmonizacao-foto {
+      position: relative;
+    }
+
+    .harmonizacao-foto-inner {
+      width: 100%;
+      aspect-ratio: 4/5;
+      border-radius: var(--raio-xl);
+      overflow: hidden;
+    }
+
+
+    .procedimentos-lista {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .procedimento-item {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      padding: 20px 24px;
+      background: var(--branco);
+      border-left: 3px solid var(--dourado);
+      border-radius: 0 var(--raio-md) var(--raio-md) 0;
+      box-shadow: var(--sombra-suave);
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    .procedimento-item:hover {
+      box-shadow: var(--sombra-media);
+      transform: translateX(4px);
+    }
+
+    .procedimento-num {
+      font-family: var(--fonte-titulo);
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--dourado);
+      letter-spacing: 0.1em;
+      min-width: 28px;
+      padding-top: 2px;
+    }
+
+    .procedimento-info h3 {
+      font-family: var(--fonte-titulo);
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--verde);
+      margin-bottom: 4px;
+    }
+
+    .procedimento-info p {
+      font-family: var(--fonte-corpo);
+      font-size: 16px;
+      color: var(--texto-suave);
+      line-height: 1.6;
+    }
+
+    /* =============================================
+       SEÇÃO: RESULTADOS (ANTES E DEPOIS)
+    ============================================= */
+    .secao-resultados {
+      padding: 100px 0;
+      background: var(--verde);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .secao-resultados::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    .secao-resultados .section-title { color: var(--branco); }
+    .secao-resultados .section-label { color: var(--dourado-claro); }
+    .secao-resultados .section-subtitle { color: rgba(255,255,255,0.65); }
+    .secao-resultados .divider-dourado { background: linear-gradient(90deg, var(--dourado-claro), transparent); }
+
+    .resultados-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .resultados-header .section-subtitle {
+      margin: 0 auto;
+    }
+
+    /* MOBILE: grid simples */
+    .resultados-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    @media (min-width: 640px) {
+      .resultados-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    /* DESKTOP: carrossel full-width */
+    .resultados-carrossel-wrap {
+      display: none;
+    }
+
+    @media (min-width: 900px) {
+      .resultados-grid { display: none; }
+      .resultados-carrossel-wrap { display: block; }
+    }
+
+    .resultados-carrossel-outer {
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--raio-xl);
+    }
+
+    .resultados-carrossel-track {
+      display: flex;
+      transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      will-change: transform;
+    }
+
+    .resultado-slide {
+      min-width: calc(45% - 10px);
+      margin-right: 20px;
+      border-radius: var(--raio-xl);
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .resultado-slide img {
+      width: 100%;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      display: block;
+      border-radius: var(--raio-xl);
+    }
+
+    /* wrapper que agrupa fotos + botões laterais */
+    .resultados-carrossel-wrap {
+      position: relative;
+    }
+
+    .resultados-carrossel-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .res-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 48px;
+      height: 48px;
+      background: rgba(45,74,45,0.75);
+      border: 1.5px solid rgba(201,168,76,0.6);
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.25s, border-color 0.25s;
+      z-index: 10;
+      flex-shrink: 0;
+    }
+
+    #resPrev { left: -24px; }
+    #resNext { right: -24px; }
+
+    .res-btn:hover {
+      background: var(--dourado);
+      border-color: var(--dourado);
+    }
+
+    .res-btn svg {
+      width: 20px;
+      height: 20px;
+      stroke: var(--branco);
+    }
+
+    .res-dots {
+      display: flex;
+      gap: 6px;
+    }
+
+    .res-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: rgba(45,74,45,0.3);
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      transition: background 0.25s, width 0.25s;
+    }
+
+    .res-dot.ativo {
+      background: var(--dourado);
+      width: 22px;
+      border-radius: 3px;
+    }
+
+    /* Card mobile */
+    .resultado-card {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 1/1;
+      cursor: pointer;
+      border-radius: var(--raio-lg);
+    }
+
+    .resultado-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .resultado-card:hover img { transform: scale(1.04); }
+
+    .resultado-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 20px;
+      background: linear-gradient(transparent, rgba(45,74,45,0.85));
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .resultado-card:hover .resultado-overlay { opacity: 1; }
+
+    .resultado-overlay span {
+      font-family: var(--fonte-titulo);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--dourado-claro);
+    }
+
+    .resultados-cta {
+      text-align: center;
+      margin-top: 52px;
+    }
+
+    .btn-cta-claro {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: transparent;
+      color: var(--branco);
+      font-family: var(--fonte-titulo);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 17px 36px;
+      border: 2px solid var(--dourado);
+      border-radius: var(--raio-pill);
+      cursor: pointer;
+      transition: all 0.35s ease;
+      width: 100%;
+    }
+
+    @media (min-width: 480px) {
+      .btn-cta-claro { width: auto; }
+    }
+
+    .btn-cta-claro:hover {
+      background: var(--dourado);
+      color: var(--verde);
+    }
+
+    .btn-cta-claro svg {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+      flex-shrink: 0;
+    }
+
+    /* =============================================
+       SEÇÃO: SOBRE O DR. FERNANDO
+    ============================================= */
+    .secao-sobre {
+      padding: 100px 0;
+      background: var(--marmore);
+    }
+
+    .sobre-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    @media (min-width: 900px) {
+      .sobre-grid { grid-template-columns: 1fr 1fr; gap: 80px; }
+    }
+
+    /* CARROSSEL DO CONSULTÓRIO */
+    .sobre-foto {
+      position: relative;
+    }
+
+    .carrossel-wrapper {
+      position: relative;
+      border-radius: var(--raio-xl);
+      overflow: hidden;
+      aspect-ratio: 4/5;
+      box-shadow: var(--sombra-forte);
+    }
+
+    .carrossel-track {
+      display: flex;
+      height: 100%;
+      transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .carrossel-slide {
+      min-width: 100%;
+      height: 100%;
+      flex-shrink: 0;
+    }
+
+    .carrossel-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    .carrossel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 44px;
+      height: 44px;
+      background: rgba(250,248,245,0.92);
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+      box-shadow: 0 2px 16px rgba(45,74,45,0.18);
+      transition: background 0.25s ease, transform 0.25s ease;
+    }
+
+    .carrossel-btn:hover {
+      background: var(--dourado);
+      transform: translateY(-50%) scale(1.08);
+    }
+
+    .carrossel-btn svg {
+      width: 18px;
+      height: 18px;
+      fill: var(--verde);
+      transition: fill 0.25s ease;
+    }
+
+    .carrossel-btn:hover svg { fill: var(--branco); }
+
+    .carrossel-prev { left: 12px; }
+    .carrossel-next { right: 12px; }
+
+    .carrossel-dots {
+      position: absolute;
+      bottom: 14px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 6px;
+      z-index: 10;
+    }
+
+    .carrossel-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.5);
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      transition: background 0.25s ease, width 0.25s ease;
+    }
+
+    .carrossel-dot.ativo {
+      background: var(--dourado);
+      width: 20px;
+      border-radius: 3px;
+    }
+
+    .carrossel-wrapper { position: relative; z-index: 1; }
+
+    .sobre-foto-inner { position: relative; z-index: 1; }
+
+    .sobre-conteudo blockquote {
+      font-family: var(--fonte-corpo);
+      font-size: clamp(20px, 3vw, 26px);
+      font-style: italic;
+      font-weight: 300;
+      color: var(--verde);
+      line-height: 1.6;
+      border-left: 3px solid var(--dourado);
+      padding-left: 24px;
+      margin-bottom: 28px;
+    }
+
+    .sobre-texto {
+      font-family: var(--fonte-corpo);
+      font-size: 18px;
+      color: var(--texto-suave);
+      line-height: 1.8;
+      margin-bottom: 32px;
+    }
+
+    .credenciais {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 36px;
+    }
+
+    .credencial {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--branco);
+      border: 1px solid rgba(45,74,45,0.12);
+      padding: 8px 16px;
+      border-radius: var(--raio-pill);
+    }
+
+    .credencial-dot {
+      width: 6px;
+      height: 6px;
+      background: var(--dourado);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .credencial span {
+      font-family: var(--fonte-titulo);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--verde);
+    }
+
+    /* =============================================
+       SEÇÃO: DOUTOR — FOTO + TEXTO LADO A LADO
+    ============================================= */
+    .secao-doutor-foto {
+      background: var(--verde);
+      overflow: hidden;
+    }
+
+    .doutor-foto-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: stretch;
+      min-height: 640px;
+    }
+
+    @media (max-width: 900px) {
+      .doutor-foto-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .doutor-foto-col {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .doutor-foto-col img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+    }
+
+    /* gradiente suave que funde a foto com o verde do lado esquerdo */
+    .doutor-foto-col::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to left, transparent 60%, var(--verde) 100%);
+      pointer-events: none;
+    }
+
+    @media (max-width: 900px) {
+      .doutor-foto-col {
+        min-height: 420px;
+        order: -1; /* foto aparece antes do texto no mobile */
+      }
+      .doutor-foto-col::after {
+        background: linear-gradient(to top, var(--verde) 0%, transparent 40%);
+      }
+    }
+
+    .doutor-texto-col {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 80px 56px 80px 64px;
+    }
+
+    @media (max-width: 900px) {
+      .doutor-texto-col {
+        padding: 48px 24px 64px;
+        text-align: center;
+        align-items: center;
+      }
+    }
+
+    .doutor-texto-col .section-label { color: var(--dourado-claro); }
+    .doutor-texto-col .section-title { color: var(--branco); }
+    .doutor-texto-col .section-title span { color: var(--dourado); }
+    .doutor-texto-col .divider-dourado {
+      background: linear-gradient(90deg, var(--dourado), transparent);
+    }
+
+    .doutor-quote {
+      font-family: var(--fonte-corpo);
+      font-size: clamp(19px, 2.2vw, 25px);
+      font-style: italic;
+      font-weight: 300;
+      color: rgba(255,255,255,0.9);
+      line-height: 1.65;
+      border-left: 3px solid var(--dourado);
+      padding-left: 22px;
+      margin-bottom: 28px;
+    }
+
+    .doutor-desc {
+      font-family: var(--fonte-corpo);
+      font-size: clamp(16px, 1.8vw, 19px);
+      color: rgba(255,255,255,0.62);
+      line-height: 1.85;
+      margin-bottom: 36px;
+    }
+
+    @media (max-width: 900px) {
+      .doutor-quote {
+        border-left: none;
+        border-top: 3px solid var(--dourado);
+        padding-left: 0;
+        padding-top: 18px;
+      }
+      .doutor-texto-col .divider-dourado { margin: 20px auto; }
+    }
+
+    /* =============================================
+       SEÇÃO: DEPOIMENTOS
+    ============================================= */
+    .secao-depoimentos {
+      padding: 100px 0;
+      background: var(--creme);
+    }
+
+    .depoimentos-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .depoimentos-header .section-subtitle { margin: 0 auto; }
+    .depoimentos-header .divider-dourado { margin: 20px auto; }
+
+    .depoimentos-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    @media (min-width: 640px) {
+      .depoimentos-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (min-width: 900px) {
+      .depoimentos-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    .depoimento-card {
+      background: var(--branco);
+      padding: 32px 28px;
+      border-radius: var(--raio-xl);
+      box-shadow: var(--sombra-suave);
+      position: relative;
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    .depoimento-card:hover {
+      box-shadow: var(--sombra-media);
+      transform: translateY(-4px);
+    }
+
+    .depoimento-card::before {
+      content: '"';
+      position: absolute;
+      top: 16px;
+      left: 24px;
+      font-family: var(--fonte-corpo);
+      font-size: 80px;
+      font-style: italic;
+      color: rgba(201,168,76,0.15);
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .estrelas {
+      display: flex;
+      gap: 3px;
+      margin-bottom: 16px;
+    }
+
+    .estrela {
+      color: var(--dourado);
+      font-size: 14px;
+    }
+
+    .depoimento-texto {
+      font-family: var(--fonte-corpo);
+      font-size: 18px;
+      font-style: italic;
+      color: var(--texto);
+      line-height: 1.75;
+      margin-bottom: 24px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .depoimento-autor {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(45,74,45,0.08);
+    }
+
+    .autor-inicial {
+      width: 40px;
+      height: 40px;
+      background: var(--verde);
+      color: var(--dourado-claro);
+      font-family: var(--fonte-titulo);
+      font-size: 16px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      border-radius: 50%;
+    }
+
+    .autor-info strong {
+      display: block;
+      font-family: var(--fonte-titulo);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--verde);
+    }
+
+    .autor-info span {
+      font-family: var(--fonte-corpo);
+      font-size: 14px;
+      color: var(--texto-suave);
+    }
+
+    .google-badge {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-family: var(--fonte-titulo);
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--texto-suave);
+      opacity: 0.6;
+    }
+
+    /* =============================================
+       SEÇÃO: CTA FINAL
+    ============================================= */
+    .secao-cta-final {
+      padding: 100px 0;
+      background: var(--verde);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .secao-cta-final::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 30% 50%, rgba(201,168,76,0.08) 0%, transparent 60%),
+        radial-gradient(ellipse at 70% 50%, rgba(201,168,76,0.05) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .cta-final-inner { position: relative; z-index: 1; }
+
+    .secao-cta-final .section-label { color: var(--dourado-claro); }
+
+    .cta-titulo {
+      font-family: var(--fonte-titulo);
+      font-size: clamp(32px, 5vw, 52px);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--branco);
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+
+    .cta-titulo span { color: var(--dourado); }
+
+    .cta-subtitulo {
+      font-family: var(--fonte-corpo);
+      font-size: clamp(18px, 2.5vw, 22px);
+      font-style: italic;
+      color: rgba(255,255,255,0.65);
+      margin-bottom: 48px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* =============================================
+       SEÇÃO: LOCALIZAÇÃO
+    ============================================= */
+    .secao-localizacao {
+      padding: 80px 0;
+      background: var(--marmore);
+    }
+
+    .localizacao-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+
+    @media (min-width: 900px) {
+      .localizacao-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    .localizacao-info {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .info-item {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .info-icon {
+      width: 44px;
+      height: 44px;
+      background: var(--verde);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      border-radius: var(--raio-sm);
+    }
+
+    .info-icon svg {
+      width: 20px;
+      height: 20px;
+      fill: var(--dourado-claro);
+    }
+
+    .info-texto strong {
+      display: block;
+      font-family: var(--fonte-titulo);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--verde);
+      margin-bottom: 4px;
+    }
+
+    .info-texto p {
+      font-family: var(--fonte-corpo);
+      font-size: 17px;
+      color: var(--texto-suave);
+      line-height: 1.6;
+    }
+
+    .mapa-wrapper {
+      width: 100%;
+      aspect-ratio: 4/3;
+      overflow: hidden;
+      border: 2px solid rgba(45,74,45,0.1);
+      border-radius: var(--raio-lg);
+    }
+
+    .mapa-wrapper iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* =============================================
+       FOOTER
+    ============================================= */
+    .footer {
+      background: #1A2E1A;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    .footer-logo {
+      font-family: var(--fonte-titulo);
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--dourado);
+      margin-bottom: 8px;
+    }
+
+    .footer-sub {
+      font-family: var(--fonte-corpo);
+      font-size: 13px;
+      color: rgba(255,255,255,0.3);
+      letter-spacing: 0.1em;
+    }
+
+    /* =============================================
+       BOTÃO FLUTUANTE WHATSAPP
+    ============================================= */
+    .fab-whatsapp {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      width: 58px;
+      height: 58px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+      z-index: 999;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .fab-whatsapp:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 28px rgba(37,211,102,0.55);
+    }
+
+    .fab-whatsapp svg {
+      width: 28px;
+      height: 28px;
+      fill: var(--branco);
+    }
+
+    /* =============================================
+       ANIMAÇÕES DE ENTRADA
+    ============================================= */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .fade-in-delay-1 { transition-delay: 0.1s; }
+    .fade-in-delay-2 { transition-delay: 0.2s; }
+    .fade-in-delay-3 { transition-delay: 0.3s; }
+    .fade-in-delay-4 { transition-delay: 0.4s; }
+
+    /* =============================================
+       MOBILE-FIRST OVERRIDES (até 640px)
+    ============================================= */
+    @media (max-width: 640px) {
+      .container { padding: 0 18px; }
+
+      /* Hero mobile: tudo centralizado */
+      .hero { min-height: auto; }
+      .hero-conteudo { padding: 40px 20px 32px !important; align-items: center; text-align: center; }
+      .hero h1 { font-size: clamp(26px, 7vw, 36px); }
+      .hero-subtitulo { font-size: 16px; margin-bottom: 0; max-width: 100%; }
+      .hero-acoes { flex-direction: column; align-items: center; gap: 12px; margin-bottom: 24px; }
+      .hero-selos { gap: 12px; justify-content: center; }
+      .hero-badge { align-self: center; }
+
+      .secao-harmonizacao { padding: 64px 0; }
+      .harmonizacao-grid { gap: 40px; }
+      .procedimentos-lista { gap: 14px; margin-top: 28px; }
+      .procedimento-item { padding: 16px 18px; }
+
+      .secao-resultados { padding: 64px 0; }
+      .resultados-grid { gap: 16px; }
+      .resultados-cta { margin-top: 36px; }
+
+      .secao-sobre { padding: 64px 0; }
+      .sobre-grid { gap: 40px; }
+      .sobre-conteudo blockquote { font-size: 19px; }
+
+      .secao-depoimentos { padding: 64px 0; }
+      .depoimentos-grid { gap: 16px; }
+      .depoimento-card { padding: 24px 20px; }
+      .depoimento-texto { font-size: 16px; }
+
+      .secao-cta-final { padding: 72px 0; }
+      .cta-titulo { font-size: clamp(28px, 8vw, 40px); }
+
+      .secao-localizacao { padding: 60px 0; }
+      .localizacao-grid { gap: 36px; }
+
+      .section-title { font-size: clamp(26px, 7vw, 36px); }
+      .section-subtitle { font-size: 16px; }
+
+      /* Botão full-width garante toque fácil no mobile */
+      .btn-cta, .btn-outline, .btn-cta-claro { padding: 16px 24px; font-size: 12px; }
+
+      /* Carrossel: proporção 4:5 no mobile (mantida pelo aspect-ratio do wrapper) */
+      .carrossel-wrapper { aspect-ratio: 4/5; }
+
+      /* Centralização universal de todas as seções no mobile */
+      .section-label { text-align: center; }
+      .section-title { text-align: center; }
+      .section-subtitle { text-align: center; max-width: 100%; margin-left: auto; margin-right: auto; }
+      .divider-dourado { margin-left: auto; margin-right: auto; }
+
+      .secao-harmonizacao .section-label,
+      .secao-harmonizacao .section-title,
+      .secao-harmonizacao .section-subtitle { text-align: center; }
+      .secao-harmonizacao .divider-dourado { margin: 20px auto; }
+
+      .sobre-conteudo { text-align: center; }
+      .sobre-conteudo blockquote { border-left: none; border-top: 3px solid var(--dourado); padding-left: 0; padding-top: 20px; text-align: center; }
+      .credenciais { justify-content: center; }
+
+      .secao-depoimentos .section-label,
+      .secao-depoimentos .section-title,
+      .secao-depoimentos .section-subtitle { text-align: center; }
+
+      .localizacao-info { text-align: center; }
+      .localizacao-info .section-label,
+      .localizacao-info .section-title { text-align: center; }
+      .localizacao-info .divider-dourado { margin: 20px auto; }
+      .info-item { flex-direction: column; align-items: center; text-align: center; }
+      .info-texto strong { text-align: center; }
+      .localizacao-info .btn-cta { margin: 0 auto; display: flex; }
+    }
+  </style>
+</head>
+
+<body class="marmore-bg">
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5JND7NQN"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- BARRA SUPERIOR -->
+  <div class="topbar">
+    <p>Cirurgião Dentista &nbsp;·&nbsp; Harmonização Orofacial &nbsp;·&nbsp; João Pessoa – PB</p>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <div class="logo-area">
+          <img src="fotos/logo sem fundo.png" alt="Dr. Fernando Fernandes" class="logo-img" />
+        </div>
+        <a href="https://wa.me/5583969222026?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20de%20Harmonização%20Facial."
+           class="btn-cta header-cta"
+           onclick="gtmClickWhatsapp('header')">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          <span>Agendar Consulta</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero marmore-bg">
+    <div class="hero-conteudo container" style="max-width:none; padding-left: clamp(18px, 6vw, 80px); padding-right: clamp(18px, 6vw, 80px);">
+      <!-- Logo visível só no mobile, dentro do hero -->
+      <div class="hero-logo-mobile fade-in">
+        <img src="fotos/logo sem fundo.png" alt="Dr. Fernando Fernandes" />
+      </div>
+      <div class="hero-badge fade-in"><span>Dr. Fernando Fernandes · João Pessoa – PB</span></div>
+      <h1 class="fade-in fade-in-delay-1">
+        Sua Melhor Versão <em>Já Existe.</em> A Gente Só Revela.
+      </h1>
+      <p class="hero-subtitulo fade-in fade-in-delay-2">
+        Harmonização facial personalizada para o seu rosto — sem exagero, sem padrão, sem perder quem você é.
+      </p>
+
+      <!-- Foto do doutor: aparece aqui no mobile (antes dos botões) -->
+      <div class="hero-foto-mobile fade-in fade-in-delay-2">
+        <img src="fotos/foto doutor 1.jpeg" alt="Dr. Fernando Fernandes" style="width:100%;height:100%;object-fit:cover;object-position:center top;" />
+        <div class="foto-fade-bottom"></div>
+      </div>
+
+      <div class="hero-acoes fade-in fade-in-delay-3">
+        <a href="https://wa.me/5583969222026?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20de%20Harmonização%20Facial."
+           class="btn-cta btn-cta-hero"
+           onclick="gtmClickWhatsapp('hero')">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          <span>Agendar Consulta</span>
+        </a>
+      </div>
+      <div class="hero-selos fade-in fade-in-delay-4">
+        <div class="selo"><div class="selo-dot"></div><span>Cirurgião Dentista</span></div>
+        <div class="selo"><div class="selo-dot"></div><span>Invisalign Doctor</span></div>
+        <div class="selo"><div class="selo-dot"></div><span>Harmonização Orofacial</span></div>
+      </div>
+    </div>
+
+    <!-- Foto do doutor: coluna direita no desktop, oculta no mobile (já aparece acima) -->
+    <div class="hero-foto-wrapper hero-foto-desktop">
+      <img src="fotos/foto doutor 1.jpeg" alt="Dr. Fernando Fernandes" class="hero-foto-img" />
+      <div class="foto-fade-bottom"></div>
+      <div class="foto-fade-left"></div>
+    </div>
+  </section>
+
+  <!-- STRIP -->
+  <div class="strip">
+    <div class="strip-inner">
+      <div class="strip-item"><span>Harmonização Facial</span><span class="strip-sep">✦</span></div>
+      <div class="strip-item"><span>Toxina Botulínica</span><span class="strip-sep">✦</span></div>
+      <div class="strip-item"><span>Preenchimento Labial</span><span class="strip-sep">✦</span></div>
+      <div class="strip-item"><span>Bichectomia</span><span class="strip-sep">✦</span></div>
+      <div class="strip-item"><span>Lentes de Contato Dental</span><span class="strip-sep">✦</span></div>
+      <div class="strip-item"><span>Ortodontia</span><span class="strip-sep">✦</span></div>
+      <div class="strip-item"><span>Harmonização Facial</span><span class="strip-sep">✦</span></div>
+      <div class="strip-item"><span>Toxina Botulínica</span><span class="strip-sep">✦</span></div>
+    </div>
+  </div>
+
+  <!-- O QUE É HARMONIZAÇÃO -->
+  <section class="secao-harmonizacao">
+    <div class="container">
+      <div class="harmonizacao-grid">
+        <div class="harmonizacao-foto fade-in">
+          <div class="harmonizacao-foto-inner">
+            <img src="fotos/espaço 1.jpeg" alt="Recepção Dental Care Odontologia Integrada" style="width:100%;height:100%;object-fit:cover;object-position:center;" />
+          </div>
+        </div>
+
+        <div class="fade-in fade-in-delay-1">
+          <p class="section-label">Por Que Tantas Pessoas Estão Fazendo</p>
+          <h2 class="section-title">O Que Muda Depois<br>da <span>Harmonização</span><br>Facial?</h2>
+          <div class="divider-dourado"></div>
+          <p class="section-subtitle">
+            Não é sobre parecer diferente. É sobre parecer mais você — a melhor versão de você. Pequenos ajustes. Resultado que todo mundo nota, mas ninguém sabe dizer o porquê.
+          </p>
+
+          <div class="procedimentos-lista">
+            <div class="procedimento-item fade-in fade-in-delay-1">
+              <div class="procedimento-num">01</div>
+              <div class="procedimento-info">
+                <h3>Toxina Botulínica</h3>
+                <p>Aquelas marcas de expressão que te fazem parecer cansado mesmo descansado? Elas somem. Resultado natural — ninguém vai saber, todos vão notar.</p>
+              </div>
+            </div>
+            <div class="procedimento-item fade-in fade-in-delay-2">
+              <div class="procedimento-num">02</div>
+              <div class="procedimento-info">
+                <h3>Preenchimento com Ácido Hialurônico</h3>
+                <p>Lábios com mais volume, maçãs do rosto definidas, contorno afinado. Tudo com precisão milimétrica — proporcional ao seu rosto, não ao rosto dos outros.</p>
+              </div>
+            </div>
+            <div class="procedimento-item fade-in fade-in-delay-3">
+              <div class="procedimento-num">03</div>
+              <div class="procedimento-info">
+                <h3>Bichectomia</h3>
+                <p>Quer um rosto mais afinado e definido? Cirurgia segura, minimamente invasiva, com recuperação rápida — e resultado que dura para sempre.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTADOS -->
+  <section class="secao-resultados" id="resultados">
+    <div class="container">
+      <div class="resultados-header fade-in">
+        <p class="section-label">Pacientes Reais · João Pessoa</p>
+        <h2 class="section-title">Antes Elas Evitavam<br><span style="color:var(--dourado-claro)">O Espelho.</span><br>Agora, Não.</h2>
+        <div class="divider-dourado" style="margin: 20px auto;"></div>
+        <p class="section-subtitle">Cada transformação foi planejada para aquele rosto específico. O seu resultado também será único.</p>
+      </div>
+
+      <div class="resultados-grid">
+        <div class="resultado-card fade-in">
+          <img src="fotos/Resultado 1.jpg" alt="Resultado Harmonização Facial — Antes e Depois" style="width:100%;height:100%;object-fit:cover;" />
+          <div class="resultado-overlay"><span>Antes &amp; Depois</span></div>
+        </div>
+        <div class="resultado-card fade-in fade-in-delay-1">
+          <img src="fotos/Resultado 2.jpg" alt="Resultado Harmonização Facial — Antes e Depois" style="width:100%;height:100%;object-fit:cover;" />
+          <div class="resultado-overlay"><span>Antes &amp; Depois</span></div>
+        </div>
+        <div class="resultado-card fade-in fade-in-delay-2">
+          <img src="fotos/Resultado 3.jpg" alt="Resultado Harmonização Facial — Antes e Depois" style="width:100%;height:100%;object-fit:cover;" />
+          <div class="resultado-overlay"><span>Antes &amp; Depois</span></div>
+        </div>
+        <div class="resultado-card resultado-desktop fade-in fade-in-delay-3">
+          <img src="fotos/Resultado 4.jpg" alt="Resultado Harmonização Facial — Antes e Depois" style="width:100%;height:100%;object-fit:cover;" />
+          <div class="resultado-overlay"><span>Antes &amp; Depois</span></div>
+        </div>
+        <div class="resultado-card resultado-desktop fade-in fade-in-delay-4">
+          <img src="fotos/Resultado 5.jpg" alt="Resultado Harmonização Facial — Antes e Depois" style="width:100%;height:100%;object-fit:cover;" />
+          <div class="resultado-overlay"><span>Antes &amp; Depois</span></div>
+        </div>
+      </div>
+
+      <!-- Carrossel desktop: fotos grandes -->
+      <div class="resultados-carrossel-wrap">
+        <div class="resultados-carrossel-outer" id="resCarrossel">
+          <div class="resultados-carrossel-track" id="resTrack">
+            <div class="resultado-slide">
+              <img src="fotos/Resultado 1.jpg" alt="Antes e Depois — Harmonização Facial" />
+              <div class="resultado-overlay"><span>Antes &amp; Depois</span></div>
+            </div>
+            <div class="resultado-slide">
+              <img src="fotos/Resultado 2.jpg" alt="Antes e Depois — Harmonização Facial" />
+              <div class="resultado-overlay"><span>Antes &amp; Depois</span></div>
+            </div>
+            <div class="resultado-slide">
+              <img src="fotos/Resultado 3.jpg" alt="Antes e Depois — Harmonização Facial" />
+              <div class="resultado-overlay"><span>Antes &amp; Depois</span></div>
+            </div>
+            <div class="resultado-slide">
+              <img src="fotos/Resultado 4.jpg" alt="Antes e Depois — Harmonização Facial" />
+              <div class="resultado-overlay"><span>Antes &amp; Depois</span></div>
+            </div>
+            <div class="resultado-slide">
+              <img src="fotos/Resultado 5.jpg" alt="Antes e Depois — Harmonização Facial" />
+              <div class="resultado-overlay"><span>Antes &amp; Depois</span></div>
+            </div>
+          </div>
+        </div>
+        <button class="res-btn" id="resPrev" aria-label="Anterior">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        <button class="res-btn" id="resNext" aria-label="Próxima">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+        <div class="resultados-carrossel-nav">
+          <div class="res-dots" id="resDots"></div>
+        </div>
+      </div>
+
+      <div class="resultados-cta fade-in">
+        <a href="https://wa.me/5583969222026?text=Olá,%20quero%20saber%20mais%20sobre%20Harmonização%20Facial."
+           class="btn-cta-claro"
+           onclick="gtmClickWhatsapp('resultados')">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          <span>Quero o Meu Resultado Também</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SEÇÃO DOUTOR FOTO 2 -->
+  <section class="secao-doutor-foto">
+    <div class="doutor-foto-grid">
+
+      <!-- Texto (esquerda) -->
+      <div class="doutor-texto-col fade-in">
+        <p class="section-label">Formação &amp; Propósito</p>
+        <h2 class="section-title">Cada Detalhe<br>Faz <span>Diferença</span></h2>
+        <div class="divider-dourado"></div>
+        <p class="doutor-quote">
+          "Harmonizar não é padronizar. É encontrar o equilíbrio que já existe no seu rosto — e revelá-lo."
+        </p>
+        <p class="doutor-desc">
+          Cirurgião Dentista com especialização em Harmonização Orofacial, o Dr. Fernando Fernandes une técnica rigorosa e sensibilidade estética em cada procedimento. Cada rosto é único — e o plano de tratamento também.
+        </p>
+        <a href="https://wa.me/5583969222026?text=Olá%20Dr.%20Fernando,%20gostaria%20de%20agendar%20uma%20consulta."
+           class="btn-cta-claro"
+           style="width:auto;"
+           onclick="gtmClickWhatsapp('doutor_foto')">
+          <svg viewBox="0 0 24 24" style="width:20px;height:20px;fill:currentColor;flex-shrink:0;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          <span>Agendar Consulta</span>
+        </a>
+      </div>
+
+      <!-- Foto (direita) -->
+      <div class="doutor-foto-col fade-in fade-in-delay-1">
+        <img src="fotos/foto doutor 2.jpeg" alt="Dr. Fernando Fernandes" />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="secao-depoimentos">
+    <div class="container">
+      <div class="depoimentos-header fade-in">
+        <p class="section-label">Quem Já Passou Pela Cadeira</p>
+        <h2 class="section-title">Eles Foram<br><span>com Medo.</span><br>Voltaram com Confiança.</h2>
+        <div class="divider-dourado"></div>
+        <p class="section-subtitle">Nenhum filtro, nenhum script. Só o que cada um sentiu depois.</p>
+      </div>
+
+      <div class="depoimentos-grid">
+
+        <div class="depoimento-card fade-in">
+          <div class="estrelas">
+            <span class="estrela">★</span><span class="estrela">★</span><span class="estrela">★</span><span class="estrela">★</span><span class="estrela">★</span>
+          </div>
+          <p class="depoimento-texto">
+            Fui com muito medo de sair com aquela cara de "fiz botox". O Dr. Fernando me explicou tudo com calma, mostrou exatamente o que ia fazer. O resultado ficou tão natural que minha mãe nem percebeu — só disse que eu estava "diferente, mais descansada". Voltei já na segunda semana com minha irmã.
+          </p>
+          <div class="depoimento-autor">
+            <div class="autor-inicial">C</div>
+            <div class="autor-info">
+              <strong>Camila R.</strong>
+              <span>João Pessoa – PB</span>
+            </div>
+            <div class="google-badge">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="#4285F4"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+              Google
+            </div>
+          </div>
+        </div>
+
+        <div class="depoimento-card fade-in fade-in-delay-1">
+          <div class="estrelas">
+            <span class="estrela">★</span><span class="estrela">★</span><span class="estrela">★</span><span class="estrela">★</span><span class="estrela">★</span>
+          </div>
+          <p class="depoimento-texto">
+            Sempre tive complexo com meu queixo e o contorno do rosto. Um amigo me indicou o Dr. Fernando e eu fui sem expectativas. Saí de lá com uma leveza que eu não sentia há anos. Não é que mudei — é que finalmente me reconheci no espelho. Recomendo demais, principalmente pra quem tem medo de exageros.
+          </p>
+          <div class="depoimento-autor">
+            <div class="autor-inicial">R</div>
+            <div class="autor-info">
+              <strong>Rafael M.</strong>
+              <span>João Pessoa – PB</span>
+            </div>
+            <div class="google-badge">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="#4285F4"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+              Google
+            </div>
+          </div>
+        </div>
+
+        <div class="depoimento-card fade-in fade-in-delay-2">
+          <div class="estrelas">
+            <span class="estrela">★</span><span class="estrela">★</span><span class="estrela">★</span><span class="estrela">★</span><span class="estrela">★</span>
+          </div>
+          <p class="depoimento-texto">
+            Fiz preenchimento labial e toxina no mesmo dia. Tinha pesquisado muito antes e escolhi o Dr. Fernando pela atenção que ele tem na consulta — ele não quer vender procedimento, quer entender o que você precisa. Faz toda a diferença. Meu lábio ficou perfeito, proporcional. Nada artificial.
+          </p>
+          <div class="depoimento-autor">
+            <div class="autor-inicial">J</div>
+            <div class="autor-info">
+              <strong>Juliana S.</strong>
+              <span>Cabedelo – PB</span>
+            </div>
+            <div class="google-badge">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="#4285F4"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+              Google
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="secao-cta-final">
+    <div class="container">
+      <div class="cta-final-inner fade-in">
+        <p class="section-label">A Consulta É o Primeiro Passo</p>
+        <h2 class="cta-titulo">Chega de Adiar<br><span>o Que Você Já Quer</span></h2>
+        <p class="cta-subtitulo">Você não precisa decidir nada agora. Só precisa marcar a consulta — o Dr. Fernando cuida do resto.</p>
+        <a href="https://wa.me/5583969222026?text=Olá,%20Dr.%20Fernando!%20Vi%20sua%20landing%20page%20e%20gostaria%20de%20agendar%20uma%20consulta%20de%20Harmonização%20Facial."
+           class="btn-cta-claro"
+           style="font-size:14px; padding:18px 40px;"
+           onclick="gtmClickWhatsapp('cta_final')">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          <span>Agendar Consulta no WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCALIZAÇÃO -->
+  <section class="secao-localizacao">
+    <div class="container">
+      <div class="localizacao-grid">
+        <div class="localizacao-info fade-in">
+          <div>
+            <p class="section-label">Onde Nos Encontrar</p>
+            <h2 class="section-title">Localização</h2>
+            <div class="divider-dourado"></div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            </div>
+            <div class="info-texto">
+              <strong>Endereço</strong>
+              <p>R. Antônio Rabelo Júnior, 161 – sala 2106<br>Miramar, João Pessoa – PB<br>CEP 58032-090</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">
+              <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            </div>
+            <div class="info-texto">
+              <strong>WhatsApp</strong>
+              <p>(83) 9692-2026</p>
+            </div>
+          </div>
+
+          <a href="https://wa.me/5583969222026?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta."
+             class="btn-cta"
+             onclick="gtmClickWhatsapp('localizacao')">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            <span>Falar pelo WhatsApp</span>
+          </a>
+        </div>
+
+        <div class="mapa-wrapper fade-in fade-in-delay-1">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.6!2d-34.8372!3d-7.1182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acdd4b81da44bf%3A0xbe252a5a1be084e7!2sDental%20Care%20Odontologia%20Integrada!5e0!3m2!1spt-BR!2sbr!4v1716000000000"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Localização Dr. Fernando Fernandes">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-logo">Dr. Fernando Fernandes</p>
+      <p class="footer-sub">Cirurgião Dentista · CRO-PB · Harmonização Orofacial · João Pessoa – PB</p>
+    </div>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE WHATSAPP -->
+  <a href="https://wa.me/5583969222026?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20Harmonização%20Facial."
+     class="fab-whatsapp"
+     aria-label="Falar pelo WhatsApp"
+     onclick="gtmClickWhatsapp('fab')">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  </a>
+
+  <script>
+    // Evento GTM no clique dos botões WhatsApp
+    function gtmClickWhatsapp(origem) {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: 'whatsapp_click',
+        event_category: 'CTA',
+        event_label: origem,
+        event_value: 1
+      });
+    }
+
+    // Carrossel do consultório
+    (function() {
+      const track = document.getElementById('carrosselTrack');
+      const dotsContainer = document.getElementById('carrosselDots');
+      const total = track ? track.children.length : 0;
+      if (!total) return;
+
+      let atual = 0;
+
+      // Cria dots
+      for (let i = 0; i < total; i++) {
+        const d = document.createElement('button');
+        d.className = 'carrossel-dot' + (i === 0 ? ' ativo' : '');
+        d.setAttribute('aria-label', 'Foto ' + (i + 1));
+        d.addEventListener('click', () => ir(i));
+        dotsContainer.appendChild(d);
+      }
+
+      function ir(n) {
+        atual = (n + total) % total;
+        track.style.transform = 'translateX(-' + (atual * 100) + '%)';
+        dotsContainer.querySelectorAll('.carrossel-dot').forEach((d, i) => {
+          d.classList.toggle('ativo', i === atual);
+        });
+      }
+
+      document.getElementById('carrosselPrev').addEventListener('click', () => ir(atual - 1));
+      document.getElementById('carrosselNext').addEventListener('click', () => ir(atual + 1));
+
+      // Swipe touch
+      let touchX = 0;
+      const wrapper = document.getElementById('carrossel');
+      wrapper.addEventListener('touchstart', e => { touchX = e.touches[0].clientX; }, { passive: true });
+      wrapper.addEventListener('touchend', e => {
+        const diff = touchX - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 40) ir(diff > 0 ? atual + 1 : atual - 1);
+      }, { passive: true });
+
+      // Auto-play a cada 4s
+      setInterval(() => ir(atual + 1), 4000);
+    })();
+
+    // Carrossel de resultados (desktop)
+    (function() {
+      const track = document.getElementById('resTrack');
+      const dotsContainer = document.getElementById('resDots');
+      if (!track || !dotsContainer) return;
+
+      const slides = track.querySelectorAll('.resultado-slide');
+      const total = slides.length;
+      let atual = 0;
+
+      // Cria dots
+      for (let i = 0; i < total; i++) {
+        const d = document.createElement('button');
+        d.className = 'res-dot' + (i === 0 ? ' ativo' : '');
+        d.setAttribute('aria-label', 'Resultado ' + (i + 1));
+        d.addEventListener('click', () => ir(i));
+        dotsContainer.appendChild(d);
+      }
+
+      const passo = 2; // avança 2 slides por vez
+
+      function getSlideWidth() {
+        return slides[0] ? slides[0].offsetWidth + 20 : 0;
+      }
+
+      function ir(n) {
+        atual = ((n % total) + total) % total;
+        track.style.transform = 'translateX(-' + (atual * getSlideWidth()) + 'px)';
+        dotsContainer.querySelectorAll('.res-dot').forEach((d, i) => {
+          d.classList.toggle('ativo', i === atual);
+        });
+      }
+
+      document.getElementById('resPrev').addEventListener('click', () => ir(atual - passo));
+      document.getElementById('resNext').addEventListener('click', () => ir(atual + passo));
+
+      // Swipe touch
+      let touchX = 0;
+      const wrapper = document.getElementById('resCarrossel');
+      wrapper.addEventListener('touchstart', e => { touchX = e.touches[0].clientX; }, { passive: true });
+      wrapper.addEventListener('touchend', e => {
+        const diff = touchX - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 40) ir(diff > 0 ? atual + 1 : atual - 1);
+      }, { passive: true });
+
+      // Auto-play a cada 5s
+      setInterval(() => ir(atual + passo), 5000);
+    })();
+
+    // Animações de scroll (IntersectionObserver)
+    const fadeEls = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    fadeEls.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

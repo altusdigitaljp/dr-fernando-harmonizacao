@@ -1,0 +1,37 @@
+FOTOS DO SITE — DR. FERNANDO FERNANDES
+========================================
+
+Coloque as fotos nesta pasta com os nomes exatos abaixo.
+Depois de subir as fotos, avise o Claude para atualizar o site.
+
+FOTOS NECESSÁRIAS:
+------------------
+
+logo.png
+  → Logo do Dr. Fernando sem fundo (PNG transparente)
+  → Aparece no canto superior esquerdo do site (header)
+
+foto-doutor.jpg
+  → Foto principal do Dr. Fernando (aparece no hero, seção principal do site)
+  → Recomendado: vertical, fundo neutro ou consultório, boa iluminação
+
+consultorio-1.jpg
+  → Foto do consultório / ambiente (aparece na seção "O que é Harmonização Facial")
+  → Pode ser: sala de atendimento, cadeira odontológica, recepção
+
+consultorio-2.jpg
+  → Segunda foto do consultório / ambiente (aparece na seção "Sobre o Dr. Fernando")
+  → Pode ser: outro ângulo do espaço, detalhe do equipamento, fachada
+
+resultado-1.jpg
+  → Foto antes/depois unificada (1080x1080) — resultado de harmonização facial
+
+resultado-2.jpg
+  → Foto antes/depois unificada (1080x1080) — resultado de harmonização facial
+
+resultado-3.jpg
+  → Foto antes/depois unificada (1080x1080) — resultado de harmonização facial
+
+========================================
+Após colocar as fotos aqui, fale ao Claude:
+"As fotos estão na pasta, pode atualizar o site."
