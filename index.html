@@ -710,6 +710,12 @@
       .resultados-carrossel-wrap { display: block; }
     }
 
+    /* wrapper que agrupa fotos + botões laterais */
+    .resultados-carrossel-wrap {
+      position: relative;
+      padding: 0 56px;
+    }
+
     .resultados-carrossel-outer {
       position: relative;
       overflow: hidden;
@@ -723,24 +729,19 @@
     }
 
     .resultado-slide {
-      min-width: calc(45% - 10px);
+      flex: 0 0 auto;
       margin-right: 20px;
       border-radius: var(--raio-xl);
       overflow: hidden;
-      flex-shrink: 0;
+      height: 500px;
     }
 
     .resultado-slide img {
-      width: 100%;
-      aspect-ratio: 1/1;
-      object-fit: cover;
+      width: auto;
+      height: 500px;
+      max-width: none;
       display: block;
       border-radius: var(--raio-xl);
-    }
-
-    /* wrapper que agrupa fotos + botões laterais */
-    .resultados-carrossel-wrap {
-      position: relative;
     }
 
     .resultados-carrossel-nav {
@@ -769,8 +770,8 @@
       flex-shrink: 0;
     }
 
-    #resPrev { left: -24px; }
-    #resNext { right: -24px; }
+    #resPrev { left: 0; }
+    #resNext { right: 0; }
 
     .res-btn:hover {
       background: var(--dourado);
@@ -1735,7 +1736,7 @@
           <div class="resultado-overlay"><span>Antes &amp; Depois</span></div>
         </div>
         <div class="resultado-card resultado-desktop fade-in fade-in-delay-3">
-          <img src="fotos/Resultado 4.jpg" alt="Resultado Harmonização Facial — Antes e Depois" style="width:100%;height:100%;object-fit:cover;" />
+          <img src="fotos/Resultado 4.jpeg" alt="Resultado Harmonização Facial — Antes e Depois" style="width:100%;height:100%;object-fit:cover;" />
           <div class="resultado-overlay"><span>Antes &amp; Depois</span></div>
         </div>
         <div class="resultado-card resultado-desktop fade-in fade-in-delay-4">
@@ -1761,7 +1762,7 @@
               <div class="resultado-overlay"><span>Antes &amp; Depois</span></div>
             </div>
             <div class="resultado-slide">
-              <img src="fotos/Resultado 4.jpg" alt="Antes e Depois — Harmonização Facial" />
+              <img src="fotos/Resultado 4.jpeg" alt="Antes e Depois — Harmonização Facial" />
               <div class="resultado-overlay"><span>Antes &amp; Depois</span></div>
             </div>
             <div class="resultado-slide">
@@ -2060,22 +2061,23 @@
         dotsContainer.appendChild(d);
       }
 
-      const passo = 2; // avança 2 slides por vez
+      const visiveis = 3;
+      const maxIdx = total - visiveis;
 
       function getSlideWidth() {
         return slides[0] ? slides[0].offsetWidth + 20 : 0;
       }
 
       function ir(n) {
-        atual = ((n % total) + total) % total;
+        atual = Math.max(0, Math.min(n, maxIdx));
         track.style.transform = 'translateX(-' + (atual * getSlideWidth()) + 'px)';
         dotsContainer.querySelectorAll('.res-dot').forEach((d, i) => {
           d.classList.toggle('ativo', i === atual);
         });
       }
 
-      document.getElementById('resPrev').addEventListener('click', () => ir(atual - passo));
-      document.getElementById('resNext').addEventListener('click', () => ir(atual + passo));
+      document.getElementById('resPrev').addEventListener('click', () => ir(atual - 1));
+      document.getElementById('resNext').addEventListener('click', () => ir(atual + 1));
 
       // Swipe touch
       let touchX = 0;
@@ -2087,7 +2089,7 @@
       }, { passive: true });
 
       // Auto-play a cada 5s
-      setInterval(() => ir(atual + passo), 5000);
+      setInterval(() => ir(atual < maxIdx ? atual + 1 : 0), 5000);
     })();
 
     // Animações de scroll (IntersectionObserver)
